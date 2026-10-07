@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { API_BASE_URL } from "./config";
 import "./App.css";
 import Auth from "./Auth";
 import MyTrips from "./MyTrips";
@@ -211,7 +212,7 @@ function App() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/trips/generate",
+        `${API_BASE_URL}/api/trips/generate`,
         {
           method: "POST",
 
@@ -313,7 +314,7 @@ function App() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/saved-trips/save",
+        `${API_BASE_URL}/api/saved-trips/save`,
         {
           method: "POST",
 

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { API_BASE_URL } from "./config";
 
 /* =====================================================
    DYNAMIC DESTINATION IMAGE
@@ -69,7 +70,7 @@ function MyTrips({
 
         const response =
           await fetch(
-            "http://localhost:5000/api/saved-trips/user",
+            `${API_BASE_URL}/api/saved-trips/user`,
             {
               headers: {
                 Authorization:
@@ -149,7 +150,7 @@ function MyTrips({
 
         const response =
           await fetch(
-            `http://localhost:5000/api/saved-trips/${tripId}`,
+            `${API_BASE_URL}/api/saved-trips/${tripId}`,
             {
               method:
                 "DELETE",
