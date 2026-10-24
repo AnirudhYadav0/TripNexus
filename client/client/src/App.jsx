@@ -1501,7 +1501,7 @@ function App() {
         </div>
 
         <div className="footer-copy">
-          ©️ 2026 TripNexus. Built with AI & ❤️
+          ©️ 2026 TripNexus. made by Anirudh🌍
         </div>
 
       </footer>
